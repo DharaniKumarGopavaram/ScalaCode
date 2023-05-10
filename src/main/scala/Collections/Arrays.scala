@@ -31,6 +31,19 @@ object Arrays {
     println(s"Calling the operateOnArray function for addition :- ${operateOnArray(numbersArray,0,_ * _)}")
     println(s"Calling the operateOnArray function for addition :- ${operateOnArray(numbersArray,0,_ max _)}")
     println(s"Calling the operateOnArray function for addition :- ${operateOnArray(numbersArray,0,_ min _)}")
+
+    println("Multi dimensional Arrays")
+    val twoDArray = Array(Array(10,20,30,40),Array(50,60,70,80,90))
+    println(s"Accessing elements of a two dimensional array using index :- ${twoDArray(0)(3)}")
+    //We can use fill and tabulate method to create multi-dimensional collections
+    //While using fill method to create two dimensional arrays we need to pass two arguments
+    //The length of the array
+    //The number of elements in the each internal array
+    println(s"Creating two dimensional array using fill method :- ${List.fill(3,5)(0)}")
+    println(s"Creating two dimensional array using fill method :- ${List.fill(3,5)(util.Random.nextInt(100))}")
+    //In the same way like fill we can use tabulate method as well to create multidimensional array
+    println(s"Creating multiplication table using tabulate method :- ")
+    List.tabulate(10,10)((i,j) => (i + 1) * (j + 1)).foreach(a => println(a.mkString(",")))
   }
 
   //The below function will take an Array as a parameter and change all the values
