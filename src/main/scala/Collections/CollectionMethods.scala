@@ -149,6 +149,20 @@ object CollectionMethods {
     List.tabulate(3)(i => i + 1).permutations.foreach(a => println(a.mkString(",")))
     println("sliding method :- ")
     sampleList.sliding(4).foreach(a => println(a.mkString(",")))
+
+    //lazyZip method in scala
+    println("lazyZip method in scala :- ")
+    val list1 = List(1,2,3,4,5,6)
+    val list2 = List("One","Two","Three")
+    list1.zip(list2).map(t => t._2 * t._1).foreach(println) //zip method creates a collection every time
+    list1.lazyZip(list2).map((cnt,str) => str * cnt).foreach(println) //lazyZip on the other hand gets evaluated lazily also it evaluates each pair on demand
+
+    //lazyZip method on 3 collections in scala
+    val numList1 = List(1,2,3,4,5,6,7,8,9)
+    val numList2 = List(10,20,30,40,50,60)
+    val numList3 = List(1000,2000,3000,4000,5000)
+    numList1.zip(numList2).zip(numList3).map(t => t._1._1 + t._1._2 + t._2).foreach(println)
+    numList1.lazyZip(numList2).lazyZip(numList3).map((x,y,z) => x + y + z).foreach(println)
   }
 
 }
