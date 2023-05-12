@@ -1,2 +1,6 @@
 Class is an blueprint and we use that blueprint to create objects
 Object is an entity in a program that contains both the data and the functionality
+We create objects using the new keyword
+Understand private and public access modifiers
+The method names can be normal regular operators like +, -, *, / etc.,
+Polymorphism means same code should work for different types
