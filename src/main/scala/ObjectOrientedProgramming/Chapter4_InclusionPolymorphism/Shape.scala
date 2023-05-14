@@ -25,13 +25,18 @@ class Circle(val radius : Double) extends Shape {
 }
 
 class Square(val length : Double) extends Rectangle(length,length)
+//since square is special type of rectangle we can use the same rectangle class to calculate perimeter and ared
+
 object Shape {
   def main(args : Array[String]) : Unit = {
     val rect = new Rectangle(3,4)
+    println("Calling the printShapeData function for rectangle")
     printShapeData(rect)
     val circle = new Circle(10)
+    println("Calling the printShapeData function for circle")
     printShapeData(circle)
     val square = new Square(10)
+    println("Calling the printShapeData function for square")
     printShapeData(square)
   }
 

@@ -6,7 +6,7 @@ class ImmutableVector2D(val x : Int, val y : Int) {
   def - (v : ImmutableVector2D) = ImmutableVector2D(x - v.x,y - v.y)
   def * (c : Int) = new ImmutableVector2D(x * c, y * c)
 
-  def unary_-(): ImmutableVector2D = { //If we define a method starting with unary then we can use it as a unary operator
+  private def unary_-(): ImmutableVector2D = { //If we define a method starting with unary then we can use it as a unary operator
     println("called the unary_- method")
     ImmutableVector2D(-x, -y)
   }
