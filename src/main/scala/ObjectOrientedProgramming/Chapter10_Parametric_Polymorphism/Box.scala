@@ -11,8 +11,8 @@ class Box[T](private var value : T)  {
 
 object MainBox {
   def main(args : Array[String]) : Unit = {
-    val intBox = new Box(42) //we can create class instances with different types
-    val stringBox = new Box("Dharani")
+    val intBox = new Box[Int](42) //we can create class instances with different types
+    val stringBox = new Box[String]("Dharani")
     println(intBox.getValue)
     intBox.setValue(100)
     println(intBox.getValue)
