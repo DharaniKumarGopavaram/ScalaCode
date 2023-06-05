@@ -148,7 +148,7 @@ object CollectionMethods {
     println("permutations method :- ")
     List.tabulate(3)(i => i + 1).permutations.foreach(a => println(a.mkString(",")))
     println("sliding method :- ")
-    sampleList.sliding(4).foreach(a => println(a.mkString(",")))
+    sampleList.sliding(5).foreach(a => println(a.mkString(",")))
 
     //lazyZip method in scala
     println("lazyZip method in scala :- ")

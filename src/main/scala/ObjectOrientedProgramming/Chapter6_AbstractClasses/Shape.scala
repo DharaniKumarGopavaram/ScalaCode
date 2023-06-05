@@ -2,7 +2,7 @@ package ObjectOrientedProgramming.Chapter6_AbstractClasses
 
 /*
   abstract classes are the classes which can have both abstract methods(without function body) and normal methods
-  We can instantiate a abstract class
+  We can not instantiate a abstract class
   If any child class inherits from the abstract class then that child class should definitely provide implementation for the methods that are abstract in parent class
   Otherwise we need to declare the child class as abstract class
 */
