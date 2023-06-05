@@ -18,7 +18,7 @@ object Chapter2_StringMethods {
         indexOf method is overloaded. There are two versions of it
         indexOf("String")
         indexOf("String",index) -- In this version it will start searching for the String from the index we specify
-        There is a method called lastIndexOf which will search for the string we specify from end to beginning
+        There is a method called lastIndexOf which will search for the string we specify from end to start
       */
       println(s"""Index of "n" in the string $name is ${name.indexOf("n")} """)
       println(s"""Index of "x" in the string $name is ${name.indexOf("x")} """)

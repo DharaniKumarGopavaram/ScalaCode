@@ -10,7 +10,7 @@ object Chapter16_WritingToAFile {
     Array("Hello","World").foreach(w => pw.println(w))
     pw.close()
     println("writing the data to printWriterFile is completed ")
-    //If we open the file that already exists and try to write the contents they will be overidden
+    //If we open the file that already exists and try to write the contents they will be overridden
     //If we want to append to the file instead of overwriting we need to use FileWriter along with PrintWriter
     val newPW = new PrintWriter(new FileWriter("/Users/dharani-kumar/Desktop/scannerFile.txt",true))
     newPW.println("500,600.0,Kavya")

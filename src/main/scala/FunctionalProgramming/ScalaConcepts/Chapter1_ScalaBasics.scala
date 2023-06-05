@@ -10,7 +10,7 @@ object Chapter1_ScalaBasics {
     There are no operators in Scala hence +, -, / and * are methods
 
     */
-    println("Hello World")
+    println("Hello World!")
     println("Converting Double to Int 5.6.toInt :- " + 5.6.toInt) //converting Double to Int
     println("Converting Int to Double 5.toDouble :- " + 5.toDouble) //converting Int to Double
     println("Calling the method + on Int object 4 by passing parameter as 10 -- 4.+(10) :- " + 4.+(10))
